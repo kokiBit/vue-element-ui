@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Container from '@/components/layout/container'
+import Main from '@/components/main'
 
 Vue.use(Router)
 
@@ -8,8 +8,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Container',
-      component: Container
+      name: 'Main',
+      component: Main
     }
   ]
 })
