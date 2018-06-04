@@ -6,8 +6,10 @@
           i.el-icon-message Navigator One
         el-menu-item-group
           template(slot="title") Group 1
-          el-menu-item(index="1-1") Option 1
-          el-menu-item(index="1-2") Option 2
+          el-menu-item(index="1-1")
+            router-link(to="/chart-js") Option 1
+          el-menu-item(index="1-2")
+            router-link(to="/") Option 2
         el-menu-item-group(title="Group 2")
           el-menu-item(index="1-3") Option 3
           el-submenu(index="1-4")
