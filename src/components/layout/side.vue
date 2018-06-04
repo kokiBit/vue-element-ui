@@ -6,12 +6,13 @@
           i.el-icon-message Navigator One
         el-menu-item-group
           template(slot="title") Group 1
-          el-menu-item(index="1-1")
-            router-link(to="/chart-js") Option 1
-          el-menu-item(index="1-2")
-            router-link(to="/") Option 2
+          router-link(to="/chart-js")
+            el-menu-item(index="1-1") Option 1
+          router-link(to="/")
+            el-menu-item(index="1-2") Option 2
         el-menu-item-group(title="Group 2")
-          el-menu-item(index="1-3") Option 3
+          router-link(to="/dashboard")
+            el-menu-item(index="1-3") Option 3
           el-submenu(index="1-4")
             template(slot="title") Option4
             el-menu-item(index="1-4-1") Option 4-1
@@ -50,4 +51,6 @@ export default {
 <style lang="stylus">  
 .el-aside
   color #333
+.el-aside a
+  text-decoration none
 </style>

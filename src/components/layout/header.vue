@@ -17,7 +17,7 @@ export default {
 
 <style lang="stylus">
 .el-header
-  background-color #B3C0D1
+  background-color #A9E2F3
   color #333
   line-height 60px
   text-align right
