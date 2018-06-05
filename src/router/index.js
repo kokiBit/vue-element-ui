@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Main from '@/components/main'
 import Chart from '@/components/chart-js'
 import Dashboard from '@/components/dashboard'
+import Radar from '@/components/radar'
 
 Vue.use(Router)
 
@@ -20,6 +21,10 @@ export default new Router({
       path: '/dashboard',
       name: 'dashboard',
       component: Dashboard
+    },{
+      path: '/radar',
+      name: 'radar',
+      component: Radar
     }
   ]
 })

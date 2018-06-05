@@ -1,33 +1,34 @@
 <template lang="pug">
   el-main
-    el-row(gutter="20")
-      el-col(:span="24")
+    el-row(gutter=20)
+      el-col(:span=24)
         el-card.box-card
           .clearfix(slot="header")
             span Total
             el-button(style="float: right; padding: 3px 0", type="text") Operation button
-          .text.item(v-for="o in 4", :key="o") {{ 'List item ' + o }}
-    el-row(gutter="20")
-      el-col(:span="12")
+          .text.item.radar-small
+            radar-component
+    el-row(gutter=20)
+      el-col(:span=12)
         el-card.box-card
           .clearfix(slot="header")
             span Batting
             el-button(style="float: right; padding: 3px 0", type="text") Operation button
           .text.item(v-for="o in 4", :key="o") {{ 'List item ' + o }}
-      el-col(:span="12")
+      el-col(:span=12)
         el-card.box-card
           .clearfix(slot="header")
             span Fileding
             el-button(style="float: right; padding: 3px 0", type="text") Operation button
           .text.item(v-for="o in 4", :key="o") {{ 'List item ' + o }}
-    el-row(gutter="20")
-      el-col(:span="12")
+    el-row(gutter=20)
+      el-col(:span=12)
         el-card.box-card
           .clearfix(slot="header")
             span Running
             el-button(style="float: right; padding: 3px 0", type="text") Operation button
           .text.item(v-for="o in 4", :key="o") {{ 'List item ' + o }}
-      el-col(:span="12")
+      el-col(:span=12)
         el-card.box-card
           .clearfix(slot="header")
             span Pitch
@@ -37,6 +38,8 @@
 
 
 <script>
+import Radar from '@/components/radar'
+
 export default {
   name: 'Dashboard',
   data() {
@@ -48,12 +51,18 @@ export default {
     return {
       tableData: Array(20).fill(item)
     }
+  },
+  components: {
+    'radar-component': Radar
   }
 }
 </script>
 
 
 <style>
+  .radar-small {
+    
+  }
   .el-main {
     background-color: #FAFAFA;
   } 

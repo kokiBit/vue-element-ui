@@ -21,7 +21,8 @@
           i.el-icon-menu Navigator Two
         el-menu-item-group
           template(slot="title") Group 1
-          el-menu-item(index="2-1") Option 1
+          router-link(to="/radar")
+            el-menu-item(index="2-1") Option 1
           el-menu-item(index="2-2") Option 2
         el-menu-item-group(title="Group 2")
           el-menu-item(index="2-3") Option 3
