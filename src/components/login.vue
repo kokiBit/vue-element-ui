@@ -27,8 +27,7 @@
     },
     methods: {
       login() {
-        // const token = "kokiBit"
-        // localStorage.setItem('user-token', token)
+        this.$store.state.count = true;
         this.$router.push('/dashboard');
       }
     }

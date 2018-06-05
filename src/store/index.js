@@ -4,7 +4,7 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 const state = {
-  count: 12
+  count: false
 }
 
 export default new Vuex.Store({

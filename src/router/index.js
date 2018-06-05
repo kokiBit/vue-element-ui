@@ -10,7 +10,7 @@ import store from '../store'
 Vue.use(Router)
 
 const ifNotAuthenticated = (to, from, next) => {
-  if (store.state.count == 12) {
+  if (!store.state.count) {
     next()
     return
   }
@@ -18,7 +18,7 @@ const ifNotAuthenticated = (to, from, next) => {
 }
 
 const ifAuthenticated = (to, from, next) => {
-  if (store.state.count == 13) {
+  if (store.state.count) {
     next()
     return
   }
