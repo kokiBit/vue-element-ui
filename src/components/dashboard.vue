@@ -52,6 +52,11 @@ export default {
       tableData: Array(20).fill(item)
     }
   },
+  computed: {
+    count () {
+      return this.$store.state.count
+    }
+  },
   components: {
     'radar-component': Radar
   }

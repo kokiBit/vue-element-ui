@@ -27,7 +27,7 @@
     },
     methods: {
       onLogin() {
-        console.log('submit!');
+        this.$router.push('/dashboard');
       }
     }
   }
