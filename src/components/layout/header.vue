@@ -6,9 +6,25 @@
         el-dropdown-item View
         el-dropdown-item Add
         el-dropdown-item Delete
-    span Tom
+    span Tom {{ count }}
+    el-button(type="primary" @click="increment") Count
 </template>
+<script>
 
+export default {
+  name: 'header',
+  computed: {
+    count () {
+      return this.$store.state.count
+    }
+  },
+  methods: {
+    increment () {
+      this.$store.state.count++
+    }
+  }
+}
+</script>
 <style lang="stylus">
 .el-header
   background-color #A9E2F3

@@ -36,7 +36,6 @@
           .text.item(v-for="o in 4", :key="o") {{ 'List item ' + o }}
 </template>
 
-
 <script>
 import Radar from '@/components/radar'
 
@@ -50,11 +49,6 @@ export default {
     };
     return {
       tableData: Array(20).fill(item)
-    }
-  },
-  computed: {
-    count () {
-      return this.$store.state.count
     }
   },
   components: {

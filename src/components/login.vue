@@ -12,7 +12,7 @@
             el-form-item(label="password")
               el-input(v-model="form.password")
             el-form-item
-              el-button(type="primary" @click="onLogin") Login
+              el-button(type="primary" @click="login") Login
 </template>
 
 <script>
@@ -26,9 +26,17 @@
       }
     },
     methods: {
-      onLogin() {
+      login() {
+        // const token = "kokiBit"
+        // localStorage.setItem('user-token', token)
         this.$router.push('/dashboard');
       }
     }
   }
+  
+  const getters = {
+    isAuthenticated: state => !!state.token,
+    authStatus: state => state.status,
+  }
+
 </script>
