@@ -23,7 +23,8 @@
           template(slot="title") Group 1
           router-link(to="/radar")
             el-menu-item(index="2-1") Option 1
-          el-menu-item(index="2-2") Option 2
+          router-link(to="/login")
+            el-menu-item(index="2-2") Option 2
         el-menu-item-group(title="Group 2")
           el-menu-item(index="2-3") Option 3
         el-submenu(index="2-4")
@@ -42,12 +43,6 @@
           template(slot="title") Option 4
           el-menu-item(index="3-4-1") Option 4-1
 </template>
-
-<script>
-export default {
-  name: 'side-component'
-}
-</script>
 
 <style lang="stylus">  
 .el-aside

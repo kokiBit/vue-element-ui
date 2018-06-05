@@ -6,7 +6,7 @@
           .clearfix(slot="header")
             span Total
             el-button(style="float: right; padding: 3px 0", type="text") Operation button
-          .text.item.radar-small
+          .text.item
             radar-component
     el-row(gutter=20)
       el-col(:span=12)
@@ -60,9 +60,6 @@ export default {
 
 
 <style>
-  .radar-small {
-    
-  }
   .el-main {
     background-color: #FAFAFA;
   } 

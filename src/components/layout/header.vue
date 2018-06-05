@@ -9,12 +9,6 @@
     span Tom
 </template>
 
-<script>
-export default {
-  name: 'header-component'
-}
-</script>
-
 <style lang="stylus">
 .el-header
   background-color #A9E2F3
